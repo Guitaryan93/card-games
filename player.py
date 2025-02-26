@@ -12,3 +12,12 @@ class Player:
         for card in self.hand:
             self.total_value += int(card[0])
 
+    def show_hand(self):
+        '''show cards in players hand'''
+        print(f"{self.name}: ", end="")
+        for card in self.hand:
+            print(f"{card} ", end="")
+        print()  # newline at the end
+    
+
+
